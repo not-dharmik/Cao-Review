@@ -101,7 +101,10 @@
         <div class="container" style="width: 50%;float: left;">
             <p>
                 <h4>
-                    When Google designed the TPU, we built a domain-specific architecture. That means, instead of designing a general purpose processor, we designed it as a matrix processor specialized for neural network work loads. TPUs can't run word processors, control rocket engines, or execute bank transactions, but they can handle the massive multiplications and additions for neural networks, at blazingly fast speeds while consuming much less power and inside a smaller physical footprint.
+                    When Google designed the TPU, we built a domain-specific architecture. That means, instead of designing a general purpose 
+                    processor, we designed it as a matrix processor specialized for neural network work loads. TPUs can't run word processors, 
+                    control rocket engines, or execute bank transactions, but they can handle the massive multiplications and additions for 
+                    neural networks, at blazingly fast speeds while consuming much less power and inside a smaller physical footprint.
                 </h4>
             </p>
         </div>
@@ -294,6 +297,41 @@
             </p>
         </div>
     </div>
+    <div class="container">
+        <h1>TPU architecture</h1>
+        <p> 
+            <h4>
+                <ul>
+                    <li>Large, on-chip DRAM required for accessing pairing weight values.</li>
+                    <li>It is Possible to simultaneously store weights and load activations. </li>
+                    <ul><li>TPU can do 64,000 of these accumulates per cycle.</li></ul>
+                    <li>First generation used 8-bit operands and quantization </li>
+                    <ul><li>Second generation uses 16-bit.</li></ul>
+                    <li>Matrix Multiplication Unit has 256 × 256 (65,536) ALUs</li>
+                    <li>Minimalistic hardware design used to improve space and power consumption</li>
+                    <li>TPU chip is half the size of the other chips</li>
+                    <!-- 28 nm process with a die size ≤ 331 mm. This is partially due to simplification of control logic -->
+                </ul>
+            </h4>
+        </p>
+        
+    </div>
+    <div class="container">
+        <div class="container" style="width: 50%;float: left;">
+            <center>
+                <img src="arch2.jpg">
+            </center>              
+        </div>
+        <div class="container" style="width: 10% ;float: left;">
+        </div>
+        <div class="container" style="width: 50%; float: left;">
+            <img src="arch1.jpg" width="100%">
+        </div>
+    </div>
+
+    <div style="height: 100px; width: 100%; float: left;">
+    </div>
+    
 
     
 
@@ -301,8 +339,7 @@
 <!-- footer --> 
 
 
-<div style="height: 800px;">
-    
+<div style="height: max-content; width: 100%; float: left;">
     <div class="container">
         <div class="row bg-dark">
             <div>
